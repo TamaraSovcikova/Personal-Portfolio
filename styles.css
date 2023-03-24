@@ -453,7 +453,7 @@ button,
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    top: -130px;
+    top: -120px;
     z-index: 1;
 }
 
@@ -464,8 +464,6 @@ button,
     object-position: center;
     border-radius: 50%;
 }
-
-
 
 #contact-me {
     position: relative;
