@@ -7,7 +7,7 @@
 body {
     background-color: var(--background);
     color: #FFFFFF;
-    font-family: "Inconsolata" !important, monospace;
+    font-family: "Inconsolata", monospace !important;
 }
 
 header {
@@ -26,25 +26,10 @@ main li {
 article {
     color: gray;
     font-size: 12px;
-    padding: 40px 20px 10px 20px;
+    padding: 40px 75px 10px 75px;
     background-color: var(--background);
 }
 
-nav .logo {
-    margin-right: 10en;
-    margin-left: 0;
-    height: 40px;
-}
-
-nav {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    height: 50px;
-    align-items: center;
-    background-color: rgba(28, 28, 28, 0.2);
-    border-bottom: 1px solid var(--borderColor);
-}
 
 h1,
 h2 {
@@ -53,23 +38,38 @@ h2 {
     align-items: center;
 }
 
+nav .logo {
+margin-right: auto;
+margin-left: 10px;
+height: 40px;
+}
+
+nav {
+box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(28, 28, 28, 0.2);
+    border-bottom: 1px solid var(--borderColor);
+    height:50px;
+    padding-right: 40px;
+}
 .logo a {
     color: rgb(9, 121, 105);
     font-size: 28px;
     font-weight: bold;
     text-decoration: none;
-    padding-left: 20px;
 
 }
 
 nav ul {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    padding: 0;
-    height: 50px;
-    list-style-type: none;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
 }
 
 nav ul li {
@@ -83,11 +83,11 @@ nav a {
 
 nav ul li a {
     color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-    padding-bottom: 5px;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease-in-out;
+        font-size: 14px;
+        text-decoration: none;
+        padding-bottom: 5px;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s ease-in-out;
 }
 
 @media (max-width: 600px) {
@@ -113,7 +113,7 @@ section:not(#timeline) {
 
 section:first-of-type {
     margin-top: -70px;
-    height: 100vh;
+    margin-bottom: 30px;
 }
 
 section h1 {
@@ -130,32 +130,38 @@ section p {
 
 #about p {
     font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 35px;
+    margin-top: 8px;
+    margin-bottom: 34px;
     color: rgb(9, 121, 105);
 }
 
 .centered {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center
 }
 
 #underH1 {
-    height: auto;
-    object-fit: cover;
+    height: auto;   
     margin: 0px;
     backdrop-filter: graytext(100%);
-
 }
 
-.centered img {
-    max-width: 100%;
-    height: auto;
+.centered img {    
+    display: block;    
     backdrop-filter: grayscale(100%);
+    
+}
 
+.centered img.crop-img {
+    object-fit:cover;
+    top:50px;
+    overflow: hidden;
+    width: 100%;
+    max-height: 30em;
 }
 
 .transparent-bg {
@@ -177,14 +183,15 @@ section p {
     backdrop-filter: grayscale(100%);
 }
 
-section h1:first-child {
-    margin-top: 60px;
+section:first-of-type h1{
+    margin-top: 150px;
 }
+
 
 section:nth-of-type(1)::after {
     content: "";
     position: absolute;
-    top: 70%;
+    top: 80%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -196,7 +203,6 @@ section:nth-of-type(1)::after {
 #timeline {
     border: 1px solid --borderColor;
     background: var(--background);
-
 }
 
 #timeline p {
@@ -219,10 +225,16 @@ section:nth-of-type(1)::after {
 
 .col {
     flex: 1;
-    padding: 10px;
+    padding: 30px  15px;
     background-color: var(--background);
     text-align: start;
     border: 1px solid var(--borderColor);
+}
+.col:first-of-type{
+    padding-left:45px;
+}
+.col:last-of-type{
+    padding-right:45px;
 }
 
 .col h2 {
