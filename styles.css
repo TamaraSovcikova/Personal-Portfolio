@@ -453,7 +453,7 @@ button,
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    top: -120px;
+    top: -100px;
     z-index: 1;
 }
 
