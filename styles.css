@@ -30,17 +30,16 @@ header {
 }
 
 /* Set logo styles */
-nav .logo {
+nav .logo img{
+    background-image: url("./images/My\ Logo.png");
     margin-right: auto;
     margin-left: 30px;
     height: 40px;
 }
 
 nav .logo a {
-    color: rgb(9, 121, 105);
-    font-size: 28px;
+    color: rgb(9, 121, 105);  
     font-weight: bold;
-    text-decoration: none;
 }
 
 /* Navigation */
@@ -53,7 +52,7 @@ nav {
     background-color: rgba(28, 28, 28, 0.2);
     border-bottom: 1px solid var(--border-color);
     height: 50px;
-    padding-right: 40px;
+    padding-right: 10px;
 }
 
 nav ul {
@@ -65,7 +64,7 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li {
+nav ul li:not(#navbar-icons) {
     margin-left: 35px;
 }
 
@@ -77,6 +76,12 @@ nav ul li a {
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
     transition: all 0.2s ease-in-out;
+}
+#navbar-icons{
+    margin-right: 8px;    
+}
+li:nth-of-type(4){
+    margin-right: 35px;
 }
 
 nav ul li a:hover {
