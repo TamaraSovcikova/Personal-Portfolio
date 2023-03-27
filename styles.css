@@ -215,8 +215,8 @@ section:nth-of-type(1)::after {
 }
 
 #timeline p {
-    margin-bottom: 30px;
-    padding: 5px 10px;
+    margin-bottom: 30px;    
+    font-size: 12px;
 }
 
 .container {
@@ -233,7 +233,7 @@ section:nth-of-type(1)::after {
 
 .col {
     flex: 1;
-    padding: 30px 15px;
+    padding: 30px 25px;
     background-color: var(--background);
     text-align: start;
     border: 1px solid var(--borderColor);
@@ -248,8 +248,7 @@ section:nth-of-type(1)::after {
 }
 
 .col h2 {
-    font-size: 12px;
-    padding: 0 10px;
+    font-size: 16px;    
 }
 
 #projects {
