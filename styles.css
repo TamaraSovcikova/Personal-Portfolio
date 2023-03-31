@@ -3,6 +3,10 @@
     --background: #1C1C1C;
     --borderColor: rgba(240, 240, 240, 0.1);
 }
+html{
+    max-width: 90em;
+    margin: auto;
+}
 
 body {
     background-color: var(--background);
@@ -144,9 +148,26 @@ main li {
 
 @media (max-width: 600px) {
     nav ul li a {
-        font-size: 10px;
-        margin-left: 1px;
+        font-size: 12px;
+        margin: -10px;
     }
+    nav .logo img{
+        margin:0;
+        height:30px;        
+    }
+    .gallery{
+        overflow-wrap: normal !important;
+    }
+    #about article{
+        padding:15px 3px 3px 3px !important;  
+    }    
+     section:not(#timeline){
+        padding:10px !important;
+    }
+    #timeline .col{
+        padding:15px !important;
+    overflow-wrap: normal !important;    }
+    
 }
 
 .centered {
@@ -363,17 +384,16 @@ button,
     padding: 40px 0;
 }
 
-.other-info-container {
-    margin: 0 25px;
+.other-info-container {    
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 400px;
     overflow: hidden;
 }
 
 .image-container {
-    flex: 1 0 70%;
+    flex: 1 0 60%;
     position: relative;
     overflow: hidden;
 }
@@ -397,6 +417,7 @@ button,
 
 .gray-background {
     padding: 0px 40px;
+    align-content: center;
 }
 
 .white-overlay {
@@ -422,7 +443,14 @@ button,
 
 .gray-background article {
     flex: 1;
-    font-size: 15px;    
+    font-size: 16px; 
+    padding: 0 75px;   
+   
+}
+.gray-background p{
+    margin:0;
+    font-size: 15px;
+color: rgb(9, 121, 105);
 }
 
 .arrows {
@@ -436,7 +464,9 @@ button,
 #article-div {
     padding: 0;
     text-align: center;
-    font-style: italic;
+    font-style: italic;    
+    align-self: center;
+    width:100%;
 }
 
 .arrow-left,
@@ -458,6 +488,10 @@ button,
     left: 0;
     transform: rotate(180deg);
 }
+.arrow-left:hover,
+.arrow-right:hover {
+    filter: invert(100%);
+}
 
 .profile-pic-container {
     width: 45px;
@@ -466,7 +500,7 @@ button,
     overflow: hidden;
     position: relative;
     margin: 0 auto;
-    top: -100px;
+    top: -15px;
     z-index: 1;
 }
 
@@ -613,3 +647,4 @@ section:not(:first-child) {
     height: 15px;
     filter: brightness(0) invert(1);
 }
+
