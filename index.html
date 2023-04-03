@@ -11,6 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./js/projects.js"></script>
     <script src="./js/other.js"></script>
+    <script src="./js/collaps.js"></script>
 </head>
 
 <body>
@@ -152,12 +153,12 @@
                     </a>
                     </div>
                     <div id="more-info"> 
-                        <a><img src="https://www.freeiconspng.com/thumbs/white-arrow-png/white-down-arrow-png-2.png"/></a>
+                        <a><img id="arrow-collapse" src="https://www.freeiconspng.com/thumbs/white-arrow-png/white-down-arrow-png-2.png"/></a>
                     </div>
                 </div>
             </div>
         </section>   
-        <section id="other-info">
+        <section class ='hidden' id="other-info">
             <div class="other-info-container">
                 <div class="image-container">
                     <img src="https://images.unsplash.com/photo-1520774779505-a7782b3fb733?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80"
@@ -183,7 +184,7 @@
         
         </section>
     </main>
-    <footer>
+    <footer class ='hidden'>
         <section id="footer-info">   
             <p class="footer-p">This is one of my first official websites, if you are interested in the code behind it, please feel free ot click <span><a href="">here</a></span></p>
         </section>
