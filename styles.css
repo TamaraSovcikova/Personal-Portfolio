@@ -593,7 +593,9 @@ color: rgb(9, 121, 105);
 .contact-me-content {
     position: relative;
     z-index: 1;
-    padding-top: 20px;    
+    padding-top: 20px; 
+    
+    
 }
 
 #contact-me h1,
@@ -609,7 +611,7 @@ color: rgb(9, 121, 105);
     margin: 0 auto 20px auto;
     padding: 20px;
     border-radius: 10px;
-    justify-content: center;
+    box-sizing: border-box;
 }
 
 .contact-form h2 {
@@ -634,10 +636,12 @@ color: rgb(9, 121, 105);
     border-radius: 5px;
     background-color: transparent;
     color: white;
+    box-sizing: border-box;
 }
 
 .contact-form textarea {
     height: 200px;
+    resize: none;
 }
 
 .contact-form button {
