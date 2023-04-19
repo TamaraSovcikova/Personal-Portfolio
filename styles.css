@@ -155,9 +155,19 @@ main li {
         margin:0;
         height:30px;        
     }
-    .gallery{
-        overflow-wrap: normal !important;
-    }
+        .gallery {
+            display:flex !important;
+            flex-direction: column;            
+        }
+        .gallery-item img { 
+        overflow: hidden !important;
+            height: 250px !important;
+            object-fit: cover !important;
+        }
+        #projects .gallery-item-info h3,
+        #projects .gallery-item-info p {
+            font-size: 80%;
+        }
     #about article{
         padding:15px 3px 3px 3px !important;  
     }    
@@ -359,6 +369,7 @@ button,
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
+    text-align: center;
 }
 
 .gallery-item {
@@ -368,7 +379,8 @@ button,
 .gallery-item img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    overflow: hidden;
     max-height:240px;
     object-fit: cover;
     transition: transform 0.5s ease;
@@ -382,8 +394,7 @@ button,
     top: 0;
     background-color: rgba(28, 28, 28, 0.6);
     color: white;
-    opacity: 0;
-    transform: translateY(100%);
+    opacity: 0;    
     transition: opacity 0.3s ease, transform 0.3s ease;
     padding: 10px;
     text-align: center;
@@ -576,6 +587,7 @@ color: rgb(9, 121, 105);
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: grayscale(100%) contrast(0.7);   
     z-index: 0; 
+    justify-self: center;
 }
 
 .contact-me-content {
@@ -594,9 +606,10 @@ color: rgb(9, 121, 105);
 
 .contact-form {
     max-width: 500px;
-    margin: 0 auto 20px;
+    margin: 0 auto 20px auto;
     padding: 20px;
     border-radius: 10px;
+    justify-content: center;
 }
 
 .contact-form h2 {
