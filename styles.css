@@ -96,7 +96,7 @@ nav ul li a:hover {
 main {
     padding-top: 70px;
 }
-header.hidden{
+header.hide{
     opacity: 0;
     animation: fadeOut 1s ease-in-out forwards;
 }
