@@ -96,6 +96,20 @@ nav ul li a:hover {
 main {
     padding-top: 70px;
 }
+header.hidden{
+    opacity: 0;
+    animation: fadeOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
 
 /* Set section styles */
 section:not(#timeline) {
@@ -523,7 +537,7 @@ color: rgb(9, 121, 105);
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    position: relative;
+    position: relative;    
 }
 
 #article-div {
@@ -543,6 +557,7 @@ color: rgb(9, 121, 105);
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
+    cursor: pointer;
 }
 
 .arrow-right {
@@ -711,6 +726,7 @@ overflow: hidden;
 
 section:not(:first-child) {
     margin-top: 50px;
+    padding: 5px;
 }
 
 .contact-links {
@@ -768,10 +784,10 @@ section:not(:first-child) {
 #more-info a img{
     width:30px;
     height:30px;
-    margin: auto;
+    margin: 5px auto;
     z-index: 100;
-    display: block;
-    margin-top: 5px;
+    display: block;  
+   
 }
 #more-info a img {
   animation: pulse 2s infinite;
@@ -814,14 +830,11 @@ section:not(:first-child) {
     display: flex;
         justify-content: center;
         align-items: center;
-        height: 100px;
+        height: 60px;
         border: 1px solid var(--borderColor);        
         margin-bottom: 0;
 }
-#footer-info p{
-text-align: center;
-color:gray;
-}
+
 #footer-info a {
     color: white;
     text-decoration: none;
@@ -829,4 +842,12 @@ color:gray;
 
 #footer-info a:hover {
     border-bottom: 2px solid #fff;    
+}
+
+.subtext{
+    text-align: center;
+    color: gray !important;
+}
+.bold{
+    font-weight: bold;
 }
