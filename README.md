@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="C:\Users\tamar\OneDrive\Pictures\Snímky obrazovky\website img.png"  alt="Website Screenshot">
+  <img src=".\images\website_img.png"  alt="Website Screenshot">
 </p>
 
 ## About 
