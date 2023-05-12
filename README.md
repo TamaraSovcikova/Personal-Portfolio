@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href=""><img src="images/My Logo.png" alt="Logo" width="200"></a>
+  <a href=""><img src="images/My Logo.png" alt="Logo" width="100"></a>
   <br>
   Tamara Sovcikova - Personal Website
   <br>
@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="images/website.png"  alt="Website Screenshot">
+  <img src="images/website.png"  alt="Website Screenshot" width="200">
 </p>
 
 ## About 
