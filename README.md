@@ -1,7 +1,4 @@
 <h1 align="center">
-  
-  <a href=""><img src="images/My Logo.png" alt="Logo" width="100"></a>
- 
   Tamara Sovcikova - Personal Website
   <br>
 </h1>
