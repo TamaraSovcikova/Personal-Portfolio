@@ -1,7 +1,7 @@
 <h1 align="center">
-  <br>
+  
   <a href=""><img src="images/My Logo.png" alt="Logo" width="100"></a>
-  <br>
+ 
   Tamara Sovcikova - Personal Website
   <br>
 </h1>
@@ -43,8 +43,6 @@
 - Email: tamara@sovcik.com
 
 🤝 I'm always open to new opportunities and want to improve my skills further, so feel free to reach out!
-
 <br><br><br>
-
 
 Made with ❤️ and 🍫
